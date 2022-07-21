@@ -1,0 +1,63 @@
+table{
+  width: 100%;
+  margin-bottom: 1rem;
+  td, th{
+    color: #eeeeee;
+    border: 1px solid #000;
+    padding: .5rem 1rem;
+  }
+  td{
+    margin-left: -20px;
+    transition: all .2s;
+    width: 40px;
+    height: 40px;
+    .disabled{
+      border: #933c3c solid 1px;
+    }
+
+
+    &.disable {
+      opacity: .5;
+    }
+    &:hover:not(.disabled){
+      background: rgba(238, 238, 238, 0.14);
+      cursor: pointer;
+    }
+    .active{
+      color: black;
+      font-weight: bold;
+    }
+    .selectet{
+      border: solid 1px red;
+      border-radius: 50px;
+      background: red;
+    }
+
+  }
+}
+.reds{
+  background: red;
+}
+
+
+.disabled{
+  background: #423e3e;
+  cursor: not-allowed;
+  span{
+    color: #423e3e;
+  }
+}
+
+.active{
+  color: red;
+  font-weight: bold;
+}
+.noBorder{
+  th{
+    border: none;
+  }
+}
+span{
+  width: 0;
+}
+

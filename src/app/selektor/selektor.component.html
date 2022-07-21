@@ -1,0 +1,12 @@
+<div class="big">
+  <span (click)="go(-1)" class="material-symbols-outlined icon">
+        arrow_back_ios
+  </span>
+
+  <span class="title"> {{ dataYear | moment | date:"MMMM y"}} </span>
+
+  <span (click)="go(1)" class="material-symbols-outlined icon">
+    arrow_forward_ios
+  </span>
+
+</div>
